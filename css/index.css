@@ -171,3 +171,58 @@ hr {
     display: block;
     width: 100%;
 }
+@media( min-width: 500px){
+.image-container {    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+}
+.before-after h2{
+    margin-top: 80px;
+    text-align: center;
+}
+.before-after img {
+    display: block;    
+    width: 100%;
+    margin: 0px;
+}
+.services-title{
+    text-align: center;
+    margin-top: 80px;
+}
+.services-images img {
+    display: block;    
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+.services-images {
+    display: grid;
+grid-template-columns: 1fr;
+grid-gap: 15px;
+text-align: center;
+font-size: 22px;
+}
+@media( min-width:500px) {
+    .services-images {
+grid-template-columns: 1fr 1fr;
+    }
+}
+@media( min-width:600px) {
+    .services-images {
+grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media( min-width:700px) {
+    .services-images{
+grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+.responces h2 {
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+}
+.responces {
+    background-color: var(--main-color);
+}
