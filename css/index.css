@@ -96,7 +96,7 @@ font-family: 'Roboto';
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
-        margin: 80px 60px 80px 60px;
+        margin: 80px 40px 80px 40px;
     }
     .aboutInfo {
         margin: 0px 20px 0px 20px;
@@ -122,27 +122,15 @@ hr {
        text-align: center;
        padding-bottom: 80px;
 }
-/* .first_cons img {
-    display: block;
-    width: 100%;
-    margin-top: 80px;
-} */
-.backgr {
-    background-image: url(../img/pet.jpg);
-    min-height: 600px;
-    background-position:  center;
-    background-size: cover;
-    background-attachment: fixed;
-    font-size: 32px;
-    }
-    .backgr p{
-        padding-top: 200px;
-        color: var(--main-color);
-    }
+
 .first_cons {
     text-align: center;
     margin: 80px 0px 80px 0px;
-
+}
+.first_cons img {
+    display: block;
+    width: 100%;
+    padding: 0px 40px 0px 40px;
 }
 .img-carousel {
     display: grid;
@@ -202,18 +190,14 @@ grid-template-columns: 1fr;
 grid-gap: 15px;
 text-align: center;
 font-size: 22px;
+margin: 40px;
 }
 @media( min-width:500px) {
     .services-images {
 grid-template-columns: 1fr 1fr;
     }
 }
-@media( min-width:600px) {
-    .services-images {
-grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-@media( min-width:700px) {
+@media( min-width:660px) {
     .services-images{
 grid-template-columns: 1fr 1fr 1fr 1fr;
     }
@@ -224,5 +208,158 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-top: 80px;
 }
 .responces {
-    background-color: var(--main-color);
+    background-color: rgb(0, 65, 86);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.carousel-inner{
+    color: white;
+    text-align: center;
+}
+.date {
+    color:rgba(17, 167, 231)
+}
+.form-consultation h2 {
+    padding-top: 80px;
+}
+.form-container {
+    background-image: url(../img/back-form.png);
+    min-height: 600px;
+    background-position:  center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+   }
+   #my-form {
+       display: flex;
+       flex-direction: column;
+       align-items:center;
+       padding: 20px;
+       background-color: white;
+       max-width: 400px;
+       margin: auto;
+   }
+   #name, #phone, #date, #my-form-button {
+       border: none;
+       border-radius: 10px;
+       padding: 10px;
+       margin: 15px;
+       min-width: 250px;
+       background-color: rgb(218, 218, 218);
+       color:rgb(139, 139, 139);
+   }
+   #my-form-button, #my-form-button1 {
+       background-color: var(--main-color);
+       color:white;
+   }
+    #my-form-button:hover, #my-form-button1:hover {
+        background-color: rgb(146, 209, 230);
+    }
+    @media( min-width: 500px) {
+        .form-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+.why-me h2 {
+padding-top: 80px;
+}
+.why-me {
+    text-align: center;
+    margin: 0px 20px 0px 40px;
+}
+.why-me img {
+    display: block;
+    width: 100%;
+}
+.why-me-info {
+    text-align: center;
+    padding: 40px;
+}
+@media( min-width:500px) {
+    .why-me-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        
+    }
+}
+.my-clinic h2 {
+    padding-top: 80px;
+}
+.my-clinic p {
+    padding-top: 40px;
+    font-size: 24px;
+}
+.my-clinic {
+    text-align: center;
+    background-color: rgb(224, 224, 224);
+}
+ .clinic-image-container img {
+     display: block;
+     width: 100%;
+ }
+ .clinic-image-container {
+     margin: 40px;
+ }
+@media( min-width:500px) {
+    .clinic-image-container {
+        display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 20px;
+    }
+}
+@media( min-width:660px) {
+    .clinic-image-container {
+grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+.useful-tips {
+     padding: 40px;
+}
+.useful-tips h2{
+text-align: center;
+}
+.useful-tips p {
+    font-size: 20px;
+    margin-top: 50px;
+}
+.btn.btn-primary {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+}
+.btn.btn-primary:hover {
+    background-color: rgb(146, 209, 230);
+}
+.card.card-body {
+    border: none;
+    font-size: 20px;
+}
+.my-form1 {
+    background-color: rgb(0, 65, 86);
+    
+  }
+
+ #second-name, #second-phone, #email, #textarea {
+       border: none;
+       border-radius: 10px;
+       padding: 10px 190px 10px 190px;
+       margin: 15px;
+       min-width: 250px;
+       background-color: rgb(218, 218, 218);
+       color:rgb(139, 139, 139);
+   }
+   #my-form1 {
+       display: flex;
+       flex-direction: column;
+       align-items:center;
+       padding: 20px;
+       background-color: white;
+       margin: auto;
+       max-width: 900px;
+   }
+   
