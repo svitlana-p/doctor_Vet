@@ -279,7 +279,10 @@ padding-top: 80px;
     text-align: center;
     padding: 40px;
 }
-@media( min-width:500px) {
+.why-me-info li {
+    padding: 20px;
+}
+@media( min-width:800px) {
     .why-me-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -362,4 +365,53 @@ text-align: center;
        margin: auto;
        max-width: 900px;
    }
-   
+   footer {
+       background-color: rgb(0, 65, 86);
+       display: flex;
+       flex-direction: column;
+       color: white;
+       padding: 50px 50px 10px 50px;
+       text-align: center;
+   }
+   footer img {
+       width: 30px;
+       height: 30px;
+   }
+   .footer-text, .links{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+   }
+   .createdBy, .rights {
+       font-size: 12px;
+       margin-top: 50px;
+   }
+   .icons {
+       display: flex;
+       justify-content: center;
+   }
+   .rights {
+       text-align: center;
+   }
+   @media( min-width: 660px) {
+       footer {
+       flex-direction: row;
+       justify-content: space-between; 
+       text-align: start;
+       }
+       .links {
+           text-align: center;
+       }
+       .footer-text {
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+       }
+       .rights {
+       display: flex;
+       justify-content: space-around;
+   }
+   .rights p {
+       margin: 10px;
+   }
+   }
