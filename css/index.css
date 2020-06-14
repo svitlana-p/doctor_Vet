@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100; 400;700&display=swap" rel="stylesheet"');
 :root {
     font-family: 'Roboto', sans-serif;
-    --main-color:  rgb(23, 103, 129)
+    --main-color:  rgb(23, 103, 129);
+    scroll-behavior: smooth;
 } 
 body {
   max-width: 1200px;
@@ -92,7 +93,7 @@ font-family: 'Roboto';
     font-size: 24px;
 }
 @media( min-width: 550px) {
-    .about-me-info {
+    #about-me-info {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
@@ -102,12 +103,12 @@ font-family: 'Roboto';
         margin: 0px 20px 0px 20px;
     }
 }
-.consultation {
+#consultation {
     background-color: var(--main-color);
     color: white;
     font-size: 24px;
  }
-.consultation h2 {
+#consultation h2 {
     text-align: center;
     padding-top: 80px;
 }
@@ -136,11 +137,11 @@ hr {
     display: grid;
     grid-template-columns: 1fr 5fr;
 }
-.cons-process {
+#cons-process {
     background-color: rgb(224, 224, 224);
     text-align: center;
     }
-.cons-process h2 {
+#cons-process h2 {
     padding-top: 80px;
 }
 .ico-cont {
@@ -165,11 +166,11 @@ hr {
     grid-template-columns: 1fr 1fr;
     }
 }
-.before-after h2{
+#before-after h2{
     margin-top: 80px;
     text-align: center;
 }
-.before-after img {
+#before-after img {
     display: block;    
     width: 100%;
     margin: 0px;
@@ -264,14 +265,14 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
             align-items: center;
         }
     }
-.why-me h2 {
+#why-me h2 {
 padding-top: 80px;
 }
-.why-me {
+#why-me {
     text-align: center;
     margin: 0px 20px 0px 40px;
 }
-.why-me img {
+#why-me img {
     display: block;
     width: 100%;
 }
@@ -365,19 +366,18 @@ text-align: center;
        margin: auto;
        max-width: 900px;
    }
-   footer {
-       background-color: rgb(0, 65, 86);
+   .footer-info {
        display: flex;
        flex-direction: column;
+    }
+   footer {
+       background-color: rgb(0, 65, 86);
        color: white;
        padding: 50px 50px 10px 50px;
        text-align: center;
    }
-   footer img {
-       width: 30px;
-       height: 30px;
-   }
-   .footer-text, .links{
+   
+   .footer-text, .footer-links{
        display: flex;
        flex-direction: column;
        justify-content: space-between;
@@ -394,22 +394,19 @@ text-align: center;
        text-align: center;
    }
    @media( min-width: 660px) {
-       footer {
+       .footer-info {
        flex-direction: row;
        justify-content: space-between; 
        text-align: start;
        }
-       .links {
-           text-align: center;
-       }
-       .footer-text {
+        .footer-text {
            display: flex;
            flex-direction: column;
            justify-content: center;
        }
        .rights {
        display: flex;
-       justify-content: space-around;
+       justify-content: space-between;
    }
    .rights p {
        margin: 10px;
