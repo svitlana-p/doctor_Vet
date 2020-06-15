@@ -5,58 +5,55 @@ const imgArray = [
   'img/fin_plan.jpg',
 ];
 let curImgInd = 0;
-const icoArray = [
-  'img/ico_carousel.png',
-  'img/ico_carousel_0.png',
-  ];
-let curIcoInd = 0;
+
 function icoPressed() {
     curImgInd++;
-    curIcoInd++;
-      if (curImgInd > imgArray.length - 1) {
+    if (curImgInd > imgArray.length - 1) {
         curImgInd = 0;
-    }
-    if (curIcoInd > icoArray.length - 1) {
-      curIcoInd = 0;
-    }
+    }    
     const img = document.querySelector('.image-cont img')
     img.src = imgArray[curImgInd];
-    const ico1 = document.querySelector('.ico1')
-    ico1.src = icoArray[curIcoInd];
-    const ico2 = document.querySelector('.ico2')
-    ico2.src = icoArray[curIcoInd-1];
-    const ico3 = document.querySelector('.ico3');
-    ico3.src = icoArray[curIcoInd];
 }
 window.addEventListener('DOMContentLoaded', function () {
-  // get the form elements defined in your form HTML above
 
   const form = document.getElementById('my-form');
   const button = document.getElementById('my-form-button');
   const status = document.getElementById('my-form-status');
 
-  // Success and Error functions for after the form is submitted
+  const formModal = document.getElementById('formModal');
+  const buttonModal = document.getElementById('buttonModal');
+  const statusModal = document.getElementById('statusModal');
 
   function success() {
     form.reset();
     button.style = 'display: none ';
     status.innerHTML = 'Thanks!';
   }
+  function successModal() {
+    formModal.reset();
+    buttonModal.style = 'display: none ';
+    statusModal.innerHTML = 'Thanks!';
+  }
 
   function error() {
     status.innerHTML = 'Oops! There was a problem.';
   }
-
-  // handle the form submission event
+ function errorModal() {
+   statusModal.innerHTML = 'Oops! There was a problem.';
+ }
 
   form.addEventListener('submit', function (ev) {
     ev.preventDefault();
     const data = new FormData(form);
     ajax(form.method, form.action, data, success, error);
   });
-});
 
-// helper function for sending an AJAX request
+formModal.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    const dataM = new FormData(formModal);
+    ajax(formModal.method, formModal.action, dataM, successModal, errorModal);
+  });
+});
 
 function ajax(method, url, data, success, error) {
   const xhr = new XMLHttpRequest();

@@ -13,6 +13,42 @@ h2 {
     font-size: 40px;
     font-family: 'Roboto';
 }
+.upButton {
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    background-color: rgb(146, 209, 230);
+    opacity: 80%;
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+@media( min-width:1200px) {
+    .upButton {
+    position: fixed;
+    right: 300px;    
+    }
+}
+.toUp {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 16px;
+    padding: 10px 0px 10px 0px;
+}
+.upButton:hover{
+    cursor: pointer;
+    background-color: var(--main-color);
+
+}
+.toUp:hover {
+    color: white;
+    text-decoration:none;
+}
 .hat {
     background-color: var(--main-color);
     color: white;
@@ -133,10 +169,9 @@ hr {
     width: 100%;
     padding: 0px 40px 0px 40px;
 }
-.img-carousel {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-}
+
+
+
 #cons-process {
     background-color: rgb(224, 224, 224);
     text-align: center;
@@ -146,8 +181,21 @@ hr {
 }
 .ico-cont {
     display: flex;
+    justify-content: space-around;
+}
+@media(min-width:660px){
+.ico-cont {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+.img-carousel {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+.ico-cont img {
+    transform: rotate(270deg);
+}
 }
 .ico-cont img {
     margin: 30px;

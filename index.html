@@ -14,6 +14,7 @@
   </head>
   <body>
     <header>
+      <div id="top"></div>
       <div class="hat">
         <p>Години роботи: 9:00 - 18:00</p>
         <p>+38 095 032 84 57</p>
@@ -83,6 +84,9 @@
       </nav>
     </header>
     <main>
+      <div class="upButton">
+        <a class="toUp" href="#top">Вверх</a>
+      </div>
       <div class="bunner">
         <div class="bunner-text">
           <h1>Володимир Моспан, <br >Ветеринар</h1>
@@ -90,13 +94,46 @@
             Лікар ветеринарної медицини.<br >
             Допоможу вирішити будь які проблеми зі здоров'ям вашого улюбленця!
           </p>
-          <button>Звернутися за допомогою</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Звернутися за допомогою</button>   
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Заповніть будь ласка форму нижче:</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form action="https://formspree.io/mjvareav" method="POST" id="formModal">
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Ім'я:</label>
+                      <input type="text" class="form-control" id="recipient-name" name="name">
+                    </div>
+                    <div class="form-group">
+                      <label for="recipient-tel" class="col-form-label">Номер телефону:</label>
+                      <input type="tel" class="form-control" id="recipient-tel" name="tel">
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Опишіть проблему зі здоров'ям:</label>
+                      <textarea class="form-control" id="message-text" name="text"></textarea>
+                    </div>
+                    <p id="statusModal"></p>             
+                   <button id="buttonModal" type="button" class="btn btn-secondary" data-dismiss="modal">Відправити</button>
+                   </form>
+                  </div>
+               
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div id="about-me-info">
         <div class="about-me">
           <img src="img/graduation.jpg" alt="університетський випуск" >
         </div>
+        
         <div class="aboutInfo">
           <h2>Про лікаря Моспан В.Я.</h2>
           <p class="subtitle">
