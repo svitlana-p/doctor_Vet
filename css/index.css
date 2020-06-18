@@ -158,6 +158,7 @@ hr {
        flex-wrap: wrap;
        text-align: center;
        padding-bottom: 80px;
+       margin: 30px;
 }
 
 .first_cons {
@@ -191,7 +192,7 @@ hr {
 }
 .img-carousel {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 10fr;
 }
 .ico-cont img {
     transform: rotate(270deg);
@@ -298,11 +299,11 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
        background-color: rgb(218, 218, 218);
        color:rgb(139, 139, 139);
    }
-   #my-form-button, #my-form-button1 {
+   #my-form-button {
        background-color: var(--main-color);
        color:white;
    }
-    #my-form-button:hover, #my-form-button1:hover {
+    #my-form-button:hover {
         background-color: rgb(146, 209, 230);
     }
     @media( min-width: 500px) {
@@ -353,6 +354,7 @@ padding-top: 80px;
  .clinic-image-container img {
      display: block;
      width: 100%;
+     margin: 10px;
  }
  .clinic-image-container {
      margin: 40px;

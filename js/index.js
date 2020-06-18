@@ -7,12 +7,14 @@ const imgArray = [
 let curImgInd = 0;
 
 function icoPressed() {
-    curImgInd++;
+  curImgInd++;
+
     if (curImgInd > imgArray.length - 1) {
         curImgInd = 0;
-    }    
+  }    
     const img = document.querySelector('.image-cont img')
     img.src = imgArray[curImgInd];
+
 }
 window.addEventListener('DOMContentLoaded', function () {
 
