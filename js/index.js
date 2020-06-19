@@ -29,19 +29,20 @@ window.addEventListener('DOMContentLoaded', function () {
   function success() {
     form.reset();
     button.style = 'display: none ';
-    status.innerHTML = 'Thanks!';
+    status.innerHTML = 'Дякую!';
   }
   function successModal() {
     formModal.reset();
     buttonModal.style = 'display: none ';
-    statusModal.innerHTML = 'Thanks!';
+    statusModal.innerHTML = 'Дякую!';
   }
 
   function error() {
-    status.innerHTML = 'Oops! There was a problem.';
+    status.innerHTML = 'Упс! Щось пішло не так. Заповніть, будь ласка, всі поля форми.';
   }
  function errorModal() {
-   statusModal.innerHTML = 'Oops! There was a problem.';
+   statusModal.innerHTML =
+     'Упс! Щось пішло не так. Заповніть, будь ласка, всі поля форми.';
  }
 
   form.addEventListener('submit', function (ev) {
