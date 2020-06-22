@@ -140,7 +140,7 @@ font-family: 'Roboto';
     }
 }
 #consultation {
-    background-color: var(--main-color);
+    background-color:rgb(23, 103, 140);
     color: white;
     font-size: 24px;
  }
