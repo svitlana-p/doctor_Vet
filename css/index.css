@@ -7,11 +7,11 @@
 body {
   max-width: 1200px;
   margin: auto;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lobster', cursive;
 }
 h2 {
     font-size: 40px;
-    font-family: 'Roboto';
+    font-family: 'Lobster';
 }
 .upButton {
     position: fixed;
@@ -65,7 +65,7 @@ h2 {
 }
 .navbar-brand {
     font-size: 26px;
-    font-family: 'Roboto';
+    font-family: 'Lobster';
   }
 .navbar.navbar-expand-lg.navbar-light.bg-light {
     font-size: 15px;
@@ -96,7 +96,7 @@ h2 {
     }
     .bunner-text{
     margin-left: 100px;
-    font-family: 'Roboto';
+    font-family: 'Lobster';
 }
 }
 .bunner-text h1 {
@@ -119,7 +119,7 @@ h2 {
 .aboutInfo {
 font-size: 18px;
 margin: 10px;
-font-family: 'Roboto';
+font-family: 'Lobster';
 }
 .about-me img{
     display: block;
